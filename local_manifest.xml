@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Device tree -->
+    <project name="Sarisan/device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="github" revision="havoc" />
+
+    <!-- Vendor trees -->
+    <project name="Sarisan/vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="github" revision="havoc" />
+    <project name="ghostrider-reborn/android_vendor_miuicamera" path="vendor/miuicamera" remote="github" revision="quartz" />
+
+    <!-- Kernel tree and clang -->
+    <project name="Sarisan/kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="github" revision="havoc" />
+    <project name="kdrag0n/proton-clang" path="prebuilts/clang/host/linux-x86/clang-12.0" remote="github" revision="master" />
+
+    <!-- Needed custom HALs -->
+    <remove-project name="android_hardware_qcom_audio" revision="lineage-17.1-caf-sm8150" /> 
+    <remove-project name="android_hardware_qcom_display" revision="lineage-17.1-caf-sm8150" /> 
+    <remove-project name="android_hardware_qcom_media" revision="lineage-17.1-caf-sm8150" />
+    <project name="trinket-devs/hardware_qcom-caf_sm8150_audio" path="hardware/qcom-caf/sm8150/audio" remote="github" revision="ten" />
+    <project name="trinket-devs/hardware_qcom-caf_sm8150_display" path="hardware/qcom-caf/sm8150/display" remote="github" revision="ten" />
+    <project name="trinket-devs/hardware_qcom-caf_sm8150_media" path="hardware/qcom-caf/sm8150/media" remote="github" revision="ten" />
+
+</manifest>
