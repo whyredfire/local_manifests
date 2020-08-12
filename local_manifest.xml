@@ -13,11 +13,7 @@
     <project name="kdrag0n/proton-clang" path="prebuilts/clang/host/linux-x86/clang-12.0" remote="github" revision="master" />
 
     <!-- Needed custom HALs -->
-    <remove-project name="android_hardware_qcom_audio" revision="lineage-17.1-caf-sm8150" /> 
     <remove-project name="android_hardware_qcom_display" revision="lineage-17.1-caf-sm8150" /> 
-    <remove-project name="android_hardware_qcom_media" revision="lineage-17.1-caf-sm8150" />
-    <project name="trinket-devs/hardware_qcom-caf_sm8150_audio" path="hardware/qcom-caf/sm8150/audio" remote="github" revision="ten" />
-    <project name="trinket-devs/hardware_qcom-caf_sm8150_display" path="hardware/qcom-caf/sm8150/display" remote="github" revision="ten" />
-    <project name="trinket-devs/hardware_qcom-caf_sm8150_media" path="hardware/qcom-caf/sm8150/media" remote="github" revision="ten" />
+    <project name="erfanoabdi/android_hardware_qcom_display" path="hardware/qcom-caf/sm8150/display" remote="github" revision="lineage-17.1-caf-sm6125" />
 
 </manifest>
