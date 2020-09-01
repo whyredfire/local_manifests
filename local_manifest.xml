@@ -2,27 +2,29 @@
 <manifest>
 
     <!-- Device trees -->
-    <project name="Sarisan/havoc_device_xiaomi_trinket-common" path="device/xiaomi/trinket-common" remote="github" revision="10.0" />
-    <project name="Sarisan/havoc_device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="github" revision="10.0" />
+    <project name="Sarisan/havoc_device_xiaomi_trinket-common" path="device/xiaomi/trinket-common" remote="github" revision="ten" />
+    <project name="Sarisan/havoc_device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="github" revision="ten" />
 
     <!-- Vendor trees -->
-    <project name="Sarisan/havoc_vendor_xiaomi_trinket-common" path="vendor/xiaomi/trinket-common" remote="github" revision="10.0" />
-    <project name="Sarisan/havoc_vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="github" revision="10.0" />
-    <project name="ghostrider-reborn/android_vendor_miuicamera" path="vendor/miuicamera" remote="github" revision="quartz" />
+    <project name="Sarisan/havoc_vendor_xiaomi_trinket-common" path="vendor/xiaomi/trinket-common" remote="github" revision="ten" />
+    <project name="Sarisan/havoc_vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="github" revision="ten" />
+    <project name="ghostrider-reborn/android_vendor_miuicamera" path="vendor/miuicamera" remote="github" revision="quartz-a3" />
 
     <!-- Kernel tree and clang -->
-    <project name="Sarisan/havoc_kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="github" revision="10.0" />
+    <project name="Sarisan/havoc_kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="github" revision="ten" />
     <project name="kdrag0n/proton-clang" path="prebuilts/clang/host/linux-x86/clang-12.0" remote="github" revision="master" />
 
     <!-- Needed custom HALs -->
     <remove-project name="android_hardware_qcom_audio" revision="lineage-17.1-caf-sm8150" />
     <remove-project name="android_hardware_qcom_display" revision="lineage-17.1-caf-sm8150" />
     <remove-project name="android_hardware_qcom_media" revision="lineage-17.1-caf-sm8150" />
+    <remove-project name="android_vendor_qcom_opensource_power" remote="lineage" />
     <project name="Sarisan/hardware_qcom-caf_sm8150_audio" path="hardware/qcom-caf/sm8150/audio" remote="github" revision="trinket" />
     <project name="Sarisan/hardware_qcom-caf_sm8150_display" path="hardware/qcom-caf/sm8150/display" remote="github" revision="trinket" />
     <project name="Sarisan/hardware_qcom-caf_sm8150_media" path="hardware/qcom-caf/sm8150/media" remote="github" revision="trinket" />
+    <project name="Sarisan/havoc_vendor_qcom_opensource_power" path="vendor/qcom/opensource/power" remote="github" revision="ten" />
 
-    <!-- Havoc-OS frameworks -->
+    <!-- Other stuff -->
     <remove-project name="android_frameworks_native" remote="havoc" />
     <project name="Havoc-OS/android_frameworks_native" path="frameworks/native" remote="github" revision="wip" />
 
