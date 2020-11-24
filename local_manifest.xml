@@ -11,7 +11,7 @@
     <project name="ghostrider-reborn/android_vendor_miuicamera" path="vendor/miuicamera" remote="github" revision="quartz-a3" />
 
     <!-- Kernel tree and clang -->
-    <project name="Sarisan/havoc_kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="github" revision="ten" clone-depth="1" />
+    <project name="Sarisan/android_kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="github" revision="ten" clone-depth="1" />
     <project name="kdrag0n/proton-clang" path="prebuilts/clang/host/linux-x86/clang-12.0" remote="github" revision="master" clone-depth="1" />
 
     <!-- Needed custom HALs -->
