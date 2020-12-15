@@ -2,23 +2,26 @@
 <manifest>
 
     <!-- Device trees -->
-    <project name="Sarisan/havoc_device_xiaomi_trinket-common" path="device/xiaomi/trinket-common" remote="github" revision="eleven" />
-    <project name="Sarisan/havoc_device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="github" revision="eleven" />
+    <project name="Sarisan/pe_device_xiaomi_trinket-common" path="device/xiaomi/trinket-common" remote="github" revision="eleven" />
+    <project name="Sarisan/pe_device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="github" revision="eleven" />
 
     <!-- Vendor trees -->
     <project name="Sarisan/havoc_vendor_xiaomi_trinket-common" path="vendor/xiaomi/trinket-common" remote="github" revision="eleven" />
     <project name="Sarisan/havoc_vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="github" revision="eleven" />
 
-    <!-- Kernel tree and clang -->
-    <project name="Sarisan/android_kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="github" revision="eleven" clone-depth="1" />
-    <project name="kdrag0n/proton-clang" path="prebuilts/clang/host/linux-x86/clang-12.0" remote="github" revision="master" clone-depth="1" />
+    <!-- Kernel tree -->
+    <project name="ArrowOS-Devices/android_kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="github" revision="arrow-11.0" clone-depth="1" />
 
     <!-- Needed custom HALs -->
-    <remove-project name="android_hardware_qcom_audio" revision="lineage-18.0-caf-sm8150" />
-    <remove-project name="android_hardware_qcom_display" revision="lineage-18.0-caf-sm8150" />
-    <remove-project name="android_hardware_qcom_media" revision="lineage-18.0-caf-sm8150" />
-    <project name="Sarisan/android_hardware_qcom-caf_sm8150_audio" path="hardware/qcom-caf/sm8150/audio" remote="github" revision="trinketR" />
-    <project name="Sarisan/android_hardware_qcom-caf_sm8150_display" path="hardware/qcom-caf/sm8150/display" remote="github" revision="trinketR" />
-    <project name="Sarisan/android_hardware_qcom-caf_sm8150_media" path="hardware/qcom-caf/sm8150/media" remote="github" revision="trinketR" />
+    <remove-project name="hardware_qcom-caf_sm8150_audio" />
+    <remove-project name="hardware_qcom-caf_sm8150_display" />
+    <remove-project name="hardware_qcom-caf_sm8150_media" />
+    <project path="hardware/qcom-caf/sm8150/audio" name="ArrowOS/android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="github" revision="arrow-11.0-caf-sm8150" />
+    <project path="hardware/qcom-caf/sm8150/display" name="ArrowOS/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="github" revision="arrow-11.0-caf-sm8150" />
+    <project path="hardware/qcom-caf/sm8150/media" name="ArrowOS/android_hardware_qcom_media" groups="qcom" remote="github" revision="arrow-11.0-caf-sm8150" />
+
+    <!-- Other stuff -->
+    <remove-project name="build_soong" />
+    <project name="Sarisan/pe_build_soong" path="build/soong" remote="github" revision="eleven" />
 
 </manifest>
