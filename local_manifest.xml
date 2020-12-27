@@ -9,8 +9,9 @@
     <project name="Sarisan/havoc_vendor_xiaomi_trinket-common" path="vendor/xiaomi/trinket-common" remote="github" revision="eleven" />
     <project name="Sarisan/havoc_vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="github" revision="eleven" />
 
-    <!-- Kernel tree -->
+    <!-- Kernel tree and clang -->
     <project name="ArrowOS-Devices/android_kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="github" revision="arrow-11.0" clone-depth="1" />
+    <project name="ThankYouMario/proprietary_vendor_qcom_sdclang" path="prebuilts/clang/host/linux-x86/clang-sdllvm" remote="github" revision="ruby" clone-depth="1" />
 
     <!-- Needed custom HALs -->
     <remove-project name="hardware_qcom-caf_sm8150_audio" />
