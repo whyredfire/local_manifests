@@ -9,7 +9,7 @@
     <project name="whyredfire/android_vendor_miuicamera" path="vendor/miuicamera" remote="github" revision="eleven" />
 
     <!-- Kernel tree and clang -->
-    <project name="Xtended-Devices/kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="github" revision="lineage-18.1" clone-depth="1" />
+    <project name="Xtended-Devices/kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="github" revision="xr" clone-depth="1" />
     <project name="ThankYouMario/proprietary_vendor_qcom_sdclang" path="prebuilts/clang/host/linux-x86/clang-sdllvm" remote="github" revision="ruby-12" clone-depth="1" />
 
     <!-- Needed custom HALs -->
