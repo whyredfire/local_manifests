@@ -5,7 +5,7 @@
     <project name="PixelOS-ginkgo/device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="github" revision="sepolicy" />
 
     <!-- Vendor trees -->
-    <project name="Sakura-Devices/vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="github" revision="eleven" />
+    <project name="Sakura-Devices/vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="github" revision="R" />
     <project name="whyredfire/android_vendor_miuicamera" path="vendor/miuicamera" remote="github" revision="eleven" />
 
     <!-- Kernel tree and clang -->
