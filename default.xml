@@ -13,7 +13,6 @@
     <project name="ThankYouMario/proprietary_vendor_qcom_sdclang" path="prebuilts/clang/host/linux-x86/clang-sdllvm" remote="github" revision="ruby-12" clone-depth="1" />
 
     <!-- Needed custom HALs -->
-    <remove-project name="hardware_qcom-caf_sm8150_audio" />
     <remove-project name="hardware_qcom-caf_sm8150_display" />
     <remove-project name="hardware_qcom-caf_sm8150_media" />
     <remove-project name="android_vendor_qcom_opensource_display-commonsys-intf" />
