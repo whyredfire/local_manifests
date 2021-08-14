@@ -2,10 +2,10 @@
 <manifest>
 
     <!-- Device trees -->
-    <project name="PixelOS-ginkgo/device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="github" revision="eleven" />
+    <project name="NezukoOS-Devices/device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="github" revision="eleven" />
 
     <!-- Vendor trees -->
-    <project name="PixelOS-ginkgo/vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="github" revision="eleven" />
+    <project name="NezukoOS-Devices/vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="github" revision="eleven" />
     <project name="whyredfire/android_vendor_miuicamera" path="vendor/miuicamera" remote="github" revision="eleven" />
 
     <!-- Kernel tree and clang -->
