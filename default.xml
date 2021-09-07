@@ -27,7 +27,9 @@
     <!-- Custom Projects -->
     <remove-project name="frameworks_base" />
     <remove-project name="frameworks_native" />
+    <remove-project name="packages_apps_Settings" />
     <project name="PixelOS-ginkgo/frameworks_base" path="frameworks/base" remote="github" revision="eleven" />
     <project name="PixelOS-ginkgo/frameworks_native" path="frameworks/native" remote="github" revision="eleven" />
+    <project name="PixelOS-ginkgo/packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="eleven" />
     
 </manifest>
