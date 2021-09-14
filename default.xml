@@ -4,7 +4,7 @@
     <remote name ="github" fetch = "https://github.com"/>
     
     <!-- Device trees -->
-    <project name="dsashwin/device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="github" revision="wip" />
+    <project name="RadiantDevices/device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="github" revision="eleven" />
 
     <!-- Vendor trees -->
     <project name="ArrowOS-Devices/android_vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="github" revision="arrow-11.0" />
