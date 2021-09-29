@@ -16,10 +16,8 @@
     <remove-project name="frameworks_base" />
     <remove-project name="vendor_wave" />
     <remove-project name="packages_apps_Settings" />
-    <remove-project name="device_wave_sepolicy" />
-    <project name="whyredfire/frameworks_base" path="frameworks/base" remote="github" revision="r" />
-    <project name="whyredfire/vendor_wave" path="vendor/wave" remote="github" revision="r" />
-    <project name="whyredfire/packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="r" />
-    <project name="whyredfire/device_wave_sepolicy" path="device/wave/sepolicy" remote="github" revision="r" />
+    <project name="whyredfire/wave-frameworks_base" path="frameworks/base" remote="github" revision="r" />
+    <project name="whyredfire/wave-vendor_wave" path="vendor/wave" remote="github" revision="r" />
+    <project name="whyredfire/wave-packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="r" />
     
 </manifest>
