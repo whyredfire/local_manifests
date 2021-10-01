@@ -20,4 +20,8 @@
     <project name="whyredfire/wave-vendor_wave" path="vendor/wave" remote="github" revision="r" />
     <project name="whyredfire/wave-packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="r" />
     
+    
+    <!-- Custom GApps -->
+    <remove-project path="vendor/google/gms" />
+    <project name="yukiscape/vendor_google_gms" path="vendor/google/gms" remote="bitbucket" revision="r" />                
 </manifest>
