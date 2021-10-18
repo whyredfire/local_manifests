@@ -2,34 +2,28 @@
 <manifest>
 
     <!-- Device trees -->
-    <project name="PixelOS-ginkgo/device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="github" revision="eleven" />
+    <project name="whyredfire/android_device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="github" revision="arrow-12.0" />
 
     <!-- Vendor trees -->
-    <project name="PixelOS-ginkgo/vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="github" revision="eleven" />
-    <project name="whyredfire/android_vendor_miuicamera" path="vendor/miuicamera" remote="github" revision="eleven" />
+    <project name="whyredfire/vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="github" revision="arrow-12.0" />
 
     <!-- Kernel tree and clang -->
     <project name="ghostrider-reborn/android_kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="github" revision="11.0" clone-depth="1" />
     <project name="ThankYouMario/proprietary_vendor_qcom_sdclang" path="prebuilts/clang/host/linux-x86/clang-sdllvm" remote="github" revision="ruby-12" clone-depth="1" />
 
-    <!-- Needed custom HALs -->
-    <remove-project name="hardware_qcom-caf_sm8150_audio" />
-    <remove-project name="hardware_qcom-caf_sm8150_display" />
-    <remove-project name="hardware_qcom-caf_sm8150_media" />
-    <remove-project name="android_vendor_qcom_opensource_display-commonsys-intf" />
-    <remove-project name="vendor_qcom_opensource_power" />
-    <project path="hardware/qcom-caf/sm8150/audio" name="ArrowOS/android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="github" revision="arrow-11.0-caf-sm8150" />
-    <project path="hardware/qcom-caf/sm8150/display" name="ArrowOS/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="github" revision="arrow-11.0-caf-sm8150" />
-    <project path="hardware/qcom-caf/sm8150/media" name="ArrowOS/android_hardware_qcom_media" groups="qcom" remote="github" revision="arrow-11.0-caf-sm8150" />
-    <project path="vendor/qcom/opensource/commonsys-intf/display" name="ArrowOS/android_vendor_qcom_opensource_display-commonsys-intf" remote="github" revision="arrow-11.0" />
-    <project path="vendor/qcom/opensource/power" name="ArrowOS/android_vendor_qcom_opensource_power" remote="github" revision="arrow-11.0" />
-
-    <!-- Custom Projects -->
-    <remove-project name="frameworks_base" />
-    <remove-project name="frameworks_native" />
-    <remove-project name="packages_apps_Settings" />
-    <project name="PixelOS-ginkgo/frameworks_base" path="frameworks/base" remote="github" revision="eleven" />
-    <project name="PixelOS-ginkgo/frameworks_native" path="frameworks/native" remote="github" revision="eleven" />
-    <project name="PixelOS-ginkgo/packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="eleven" />
+    <!-- Needed custom HALs -->    
+    <remove-project name="platform_hardware_libhardware" />
+    <remove-project name="platform_external_tinycompress" />
+    <remove-project name="platform_external_selinux" />
+    <remove-project name="ArrowOS/android_hardware_qcom_display" />
+    <remove-project name="ArrowOS/android_hardware_qcom_audio" />
+    <remove-project name="ArrowOS/android_hardware_qcom_media" />
+    <project path="hardware/libhardware" name="yukiscape/hardware_libhardware" groups="pdk" revision="12" remote="github" />
+    <project path="external/tinycompress" name="yukiscape/platform_external_tinycompress" groups="pdk" revision="s" remote="github" />
+    <project path="external/selinux" name="yukiscape/external_selinux" groups="pdk" revision="12" remote="github" />
+    <project path="hardware/qcom-caf/sm8150/display" name="yukiscape/platform_hardware_qcom-caf_sm8150_display" groups="pdk-qcom,qcom,qcom_display" revision="android-12" remote="github" />
+    <project path="hardware/qcom-caf/sm8150/audio" name="aosp-stuff/platform_hardware_qcom-caf_sm8150_audio" groups="qcom,qcom_audio,pdk-qcom" revision="android-11" remote="github" />
+    <project path="hardware/qcom-caf/sm8150/media" name="aosp-stuff/platform_hardware_qcom-caf_sm8150_media" groups="qcom,pdk-qcom" revision="android-11" remote="github" />
+    <project path="device/qcom/sepolicy/vndr" name="yukiscape/device_qcom_sepolicy_vndr" revision="android-12" remote="github" />
     
 </manifest>
