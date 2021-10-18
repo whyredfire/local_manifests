@@ -12,7 +12,7 @@
     <project name="ThankYouMario/proprietary_vendor_qcom_sdclang" path="prebuilts/clang/host/linux-x86/clang-sdllvm" remote="github" revision="ruby-12" clone-depth="1" />
 
     <!-- Needed custom HALs -->    
-    <remove-project name="platform_hardware_libhardware" />
+    <!-- remove-project name="platform_hardware_libhardware" />
     <remove-project name="platform_external_tinycompress" />
     <remove-project name="platform_external_selinux" />
     <remove-project name="ArrowOS/android_hardware_qcom_display" />
@@ -24,6 +24,6 @@
     <project path="hardware/qcom-caf/sm8150/display" name="yukiscape/platform_hardware_qcom-caf_sm8150_display" groups="pdk-qcom,qcom,qcom_display" revision="android-12" remote="github" />
     <project path="hardware/qcom-caf/sm8150/audio" name="aosp-stuff/platform_hardware_qcom-caf_sm8150_audio" groups="qcom,qcom_audio,pdk-qcom" revision="android-11" remote="github" />
     <project path="hardware/qcom-caf/sm8150/media" name="aosp-stuff/platform_hardware_qcom-caf_sm8150_media" groups="qcom,pdk-qcom" revision="android-11" remote="github" />
-    <project path="device/qcom/sepolicy/vndr" name="yukiscape/device_qcom_sepolicy_vndr" revision="android-12" remote="github" />
+    <project path="device/qcom/sepolicy/vndr" name="yukiscape/device_qcom_sepolicy_vndr" revision="android-12" remote="github" /-->
     
 </manifest>
